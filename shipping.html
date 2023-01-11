@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="col-md-12">
+        <div class="widget">
+            <div id="UpdatePanel7">
+
+                <div class="head dark">
+                    <div class="icon"><i class="icos-pencil3"></i></div>
+                    <h2>Airwaybill Entry (With Automation)</h2>
+
+                    <span id="Label2" style="display:inline-block;width:300px;"></span>
+                    <span id="Label1" style="color:White;font-size:17px;font-weight:bold;"></span>
+                </div>
+
+            </div>
+
+            <div class="block-fluid">
+
+                <div class="col-md-6">
+                    <div class="head">
+                        <div class="icon"><i class="icosg-pencil"></i></div>
+
+                        <h2>Network/Service Details</h2>
+                    </div>
+                    <div id="UpdatePanel1">
+
+                        <div class="form-group">
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-4">
+
+                            </div>
+                            <div class="col-md-6">
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">RefrenceNo:</div>
+                            <div class="col-md-6">
+                                <input name="txtCustomerRefrenceNo" type="text"
+                                    onchange="javascript:setTimeout('__doPostBack(\'txtCustomerRefrenceNo\',\'\')', 0)"
+                                    onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                    id="txtCustomerRefrenceNo" class="form-control">
+
+                            </div>
+                            <div class="col-md-4">
+                                <input name="txtawno" type="text" readonly="readonly" id="txtawno" placeholder="Awbno"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Destination*:</div>
+                            <div class="col-md-10">
+                                <div id="UpdatePanel3">
+
+
+                                    <select name="txtcountry" id="txtcountry" style="width: 100%;">
+                                        <option value="Select Value">Select Value</option>
+                                        <option value="ABU DHABI-UAE">ABU DHABI-UAE</option>
+                                        <option value="ADEN-YEMEN">ADEN-YEMEN</option>
+                                        <option value="AFGANISTAN">AFGANISTAN</option>
+                                        <option value="AJMAN-UAE">AJMAN-UAE</option>
+                                        <option value="AL KHOBAR-S ARABIA">AL KHOBAR-S ARABIA</option>
+                                        <option value="ALBANIA">ALBANIA</option>
+                                        <option value="ALEXENDERIA-EGYPT">ALEXENDERIA-EGYPT</option>
+                                        <option value="ALGERIA">ALGERIA</option>
+                                        <option value="AMERICAN SAMOA">AMERICAN SAMOA</option>
+                                        <option value="ANDORRA">ANDORRA</option>
+                                        <option value="ANDORRA">ANDORRA</option>
+                                        <option value="ANGOLA">ANGOLA</option>
+                                        <option value="ANGULIA">ANGULIA</option>
+                                        <option value="ANKARA-TURKEY">ANKARA-TURKEY</option>
+                                        <option value="ANTIGUA &amp; BARBADOS">ANTIGUA &amp; BARBADOS</option>
+                                        <option value="ARGENTINA">ARGENTINA</option>
+                                        <option value="ARMENIA">ARMENIA</option>
+                                        <option value="ARUBA">ARUBA</option>
+                                        <option value="AUCKLAND-NEW ZEALAND">AUCKLAND-NEW ZEALAND</option>
+                                        <option value="AUSTRALIA">AUSTRALIA</option>
+                                        <option value="AUSTRIA">AUSTRIA</option>
+                                        <option value="AUSTRIA">AUSTRIA</option>
+                                        <option value="AZERBAIJAN">AZERBAIJAN</option>
+                                        <option value="AZORE">AZORE</option>
+                                        <option value="BAHAMAS">BAHAMAS</option>
+                                        <option value="BAHRAIN">BAHRAIN</option>
+                                        <option value="BANGKOK-THAILAND">BANGKOK-THAILAND</option>
+                                        <option value="BANGLADESH">BANGLADESH</option>
+                                        <option value="BARBADOS">BARBADOS</option>
+                                        <option value="BARDUBA ANTIGUA">BARDUBA ANTIGUA</option>
+                                        <option value="BEIJING-CHINA">BEIJING-CHINA</option>
+                                        <option value="BELARUS">BELARUS</option>
+                                        <option value="BELGIUM">BELGIUM</option>
+                                        <option value="BELGIUM">BELGIUM</option>
+                                        <option value="BELGIUM 1/ BRUSSELS">BELGIUM 1/ BRUSSELS</option>
+                                        <option value="BELGIUM 2">BELGIUM 2</option>
+                                        <option value="BELIZE">BELIZE</option>
+                                        <option value="BENIN">BENIN</option>
+                                        <option value="BERMUDA">BERMUDA</option>
+                                        <option value="BHUTAN">BHUTAN</option>
+                                        <option value="BOLIVIA">BOLIVIA</option>
+                                        <option value="BONAIRE">BONAIRE</option>
+                                        <option value="BOSNIA AND HERZEGOVINA">BOSNIA AND HERZEGOVINA</option>
+                                        <option value="BOTSWANA">BOTSWANA</option>
+                                        <option value="BOUVET ISL">BOUVET ISL</option>
+                                        <option value="BRAZIL">BRAZIL</option>
+                                        <option value="BRITISH INDIAN OCEAN">BRITISH INDIAN OCEAN</option>
+                                        <option value="BRITISH VIRGIN ISL">BRITISH VIRGIN ISL</option>
+                                        <option value="BRUNEI">BRUNEI</option>
+                                        <option value="BUESINGEN">BUESINGEN</option>
+                                        <option value="BULGARIA">BULGARIA</option>
+                                        <option value="BULGARIA">BULGARIA</option>
+                                        <option value="BURKINA FASO">BURKINA FASO</option>
+                                        <option value="BURUNDI">BURUNDI</option>
+                                        <option value="CAMBODIA">CAMBODIA</option>
+                                        <option value="CAMEROON">CAMEROON</option>
+                                        <option value="CANADA">CANADA</option>
+                                        <option value="CANADA -1">CANADA -1</option>
+                                        <option value="CANARY ISL">CANARY ISL</option>
+                                        <option value="CAPE VERDE">CAPE VERDE</option>
+                                        <option value="CAYMAN ISL">CAYMAN ISL</option>
+                                        <option value="CENTRAL AFRICAN REP">CENTRAL AFRICAN REP</option>
+                                        <option value="CHAD">CHAD</option>
+                                        <option value="CHANNEL ISL">CHANNEL ISL</option>
+                                        <option value="CHILE">CHILE</option>
+                                        <option value="CHINA">CHINA</option>
+                                        <option value="COCOS ISL">COCOS ISL</option>
+                                        <option value="COLOMBIA">COLOMBIA</option>
+                                        <option value="COLOMBO-SRI LANKA">COLOMBO-SRI LANKA</option>
+                                        <option value="COMOROS">COMOROS</option>
+                                        <option value="CONGO">CONGO</option>
+                                        <option value="COOK ISL">COOK ISL</option>
+                                        <option value="COSTA RICA">COSTA RICA</option>
+                                        <option value="COTE D IVOIRE">COTE D IVOIRE</option>
+                                        <option value="CROATIA">CROATIA</option>
+                                        <option value="CUBA">CUBA</option>
+                                        <option value="CURACAO">CURACAO</option>
+                                        <option value="CYPRUS">CYPRUS</option>
+                                        <option value="CZECH REP">CZECH REP</option>
+                                        <option value="CZECH REP">CZECH REP</option>
+                                        <option value="DAMMAM-S ARABIA">DAMMAM-S ARABIA</option>
+                                        <option value="DENMARK">DENMARK</option>
+                                        <option value="DENMARK">DENMARK</option>
+                                        <option value="DESSULDORF-GERMANY">DESSULDORF-GERMANY</option>
+                                        <option value="DHAHRAN-S ARABIA">DHAHRAN-S ARABIA</option>
+                                        <option value="DJIBOUTI">DJIBOUTI</option>
+                                        <option value="DOMINICA">DOMINICA</option>
+                                        <option value="DOMINICAN REP">DOMINICAN REP</option>
+                                        <option value="DUBAI-UAE">DUBAI-UAE</option>
+                                        <option value="ECUADOR">ECUADOR</option>
+                                        <option value="EGYPT">EGYPT</option>
+                                        <option value="EL SALVADOR">EL SALVADOR</option>
+                                        <option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option>
+                                        <option value="ERITREA">ERITREA</option>
+                                        <option value="ESTONIA">ESTONIA</option>
+                                        <option value="ESTONIA">ESTONIA</option>
+                                        <option value="ETHIOPIA">ETHIOPIA</option>
+                                        <option value="FALKLAND ISL">FALKLAND ISL</option>
+                                        <option value="FAROE ISL">FAROE ISL</option>
+                                        <option value="FIJI ISL">FIJI ISL</option>
+                                        <option value="FINLAND">FINLAND</option>
+                                        <option value="FINLAND">FINLAND</option>
+                                        <option value="FRANCE">FRANCE</option>
+                                        <option value="FRANCE">FRANCE</option>
+                                        <option value="FRANKFURT-GERMANY">FRANKFURT-GERMANY</option>
+                                        <option value="FRENCH GUINEA">FRENCH GUINEA</option>
+                                        <option value="FRENCH POLYNESIA">FRENCH POLYNESIA</option>
+                                        <option value="FUJIAN-CHINA">FUJIAN-CHINA</option>
+                                        <option value="GABON">GABON</option>
+                                        <option value="GAMBIA">GAMBIA</option>
+                                        <option value="GENEVA-SWITZERLAND">GENEVA-SWITZERLAND</option>
+                                        <option value="GEORGIA">GEORGIA</option>
+                                        <option value="GERMANY">GERMANY</option>
+                                        <option value="GERMANY">GERMANY</option>
+                                        <option value="GHANA">GHANA</option>
+                                        <option value="GIBRALTOR">GIBRALTOR</option>
+                                        <option value="GREECE">GREECE</option>
+                                        <option value="GREECE">GREECE</option>
+                                        <option value="GREENLAND">GREENLAND</option>
+                                        <option value="GRENADA">GRENADA</option>
+                                        <option value="GUADELOUPE">GUADELOUPE</option>
+                                        <option value="GUAM">GUAM</option>
+                                        <option value="GUANGDONG-CHINA">GUANGDONG-CHINA</option>
+                                        <option value="GUATEMALA">GUATEMALA</option>
+                                        <option value="GUERNSEY">GUERNSEY</option>
+                                        <option value="GUINEA REP">GUINEA REP</option>
+                                        <option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
+                                        <option value="GUYANA">GUYANA</option>
+                                        <option value="HAITI">HAITI</option>
+                                        <option value="HAMBURG-GERMANY">HAMBURG-GERMANY</option>
+                                        <option value="HEARD &amp; MCDONALD ISL">HEARD &amp; MCDONALD ISL</option>
+                                        <option value="HELIGOLAND">HELIGOLAND</option>
+                                        <option value="HOLLAND">HOLLAND</option>
+                                        <option value="HOLLAND 1/AMSTERDAM">HOLLAND 1/AMSTERDAM</option>
+                                        <option value="HOLLAND 2">HOLLAND 2</option>
+                                        <option value="HONDURAS">HONDURAS</option>
+                                        <option value="HONG KONG">HONG KONG</option>
+                                        <option value="HUNGARY">HUNGARY</option>
+                                        <option value="HUNGARY">HUNGARY</option>
+                                        <option value="ICELAND">ICELAND</option>
+                                        <option value="INDONESIA">INDONESIA</option>
+                                        <option value="IRAN">IRAN</option>
+                                        <option value="IRAQ">IRAQ</option>
+                                        <option value="IRELAND">IRELAND</option>
+                                        <option value="IRELAND">IRELAND</option>
+                                        <option value="ISLE OF MAN">ISLE OF MAN</option>
+                                        <option value="ISRAEL">ISRAEL</option>
+                                        <option value="ITALY">ITALY</option>
+                                        <option value="ITALY">ITALY</option>
+                                        <option value="IVORY COST">IVORY COST</option>
+                                        <option value="JAKARTA-INDONESIA">JAKARTA-INDONESIA</option>
+                                        <option value="JAMAICA">JAMAICA</option>
+                                        <option value="JAPAN">JAPAN</option>
+                                        <option value="JEDDAH-S ARABIA">JEDDAH-S ARABIA</option>
+                                        <option value="JERSEY">JERSEY</option>
+                                        <option value="JOHANSBURG-S AFRICA">JOHANSBURG-S AFRICA</option>
+                                        <option value="JORDAN">JORDAN</option>
+                                        <option value="KAZAKISTAN">KAZAKISTAN</option>
+                                        <option value="KENYA">KENYA</option>
+                                        <option value="KIRIBATI">KIRIBATI</option>
+                                        <option value="KOSOVO">KOSOVO</option>
+                                        <option value="KUALALMPUR-MALAYSIA">KUALALMPUR-MALAYSIA</option>
+                                        <option value="KUWAIT">KUWAIT</option>
+                                        <option value="KYRGYZSTAN">KYRGYZSTAN</option>
+                                        <option value="LAHORE-PAKISTAN">LAHORE-PAKISTAN</option>
+                                        <option value="LAOS">LAOS</option>
+                                        <option value="LATVIA">LATVIA</option>
+                                        <option value="LATVIA">LATVIA</option>
+                                        <option value="LEBANON">LEBANON</option>
+                                        <option value="LEICESTER-UK">LEICESTER-UK</option>
+                                        <option value="LESOTHO">LESOTHO</option>
+                                        <option value="LIBERIA">LIBERIA</option>
+                                        <option value="LIBYA">LIBYA</option>
+                                        <option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+                                        <option value="LITHUANIA">LITHUANIA</option>
+                                        <option value="LITHUANIA">LITHUANIA</option>
+                                        <option value="LONDON">LONDON</option>
+                                        <option value="LUXEMBOURG">LUXEMBOURG</option>
+                                        <option value="LUXEMBOURG">LUXEMBOURG</option>
+                                        <option value="MACAU">MACAU</option>
+                                        <option value="MACEDONIA">MACEDONIA</option>
+                                        <option value="MADAGASCAR">MADAGASCAR</option>
+                                        <option value="MADEIRA">MADEIRA</option>
+                                        <option value="MALAWI">MALAWI</option>
+                                        <option value="MALAYSIA">MALAYSIA</option>
+                                        <option value="MALDIVES">MALDIVES</option>
+                                        <option value="MALI">MALI</option>
+                                        <option value="MALTA">MALTA</option>
+                                        <option value="MANILA-PHILIPPINES">MANILA-PHILIPPINES</option>
+                                        <option value="MARSHAL ISL">MARSHAL ISL</option>
+                                        <option value="MARTINIQUE">MARTINIQUE</option>
+                                        <option value="MAURITANIA">MAURITANIA</option>
+                                        <option value="MAURITIUS">MAURITIUS</option>
+                                        <option value="MAYOTTE">MAYOTTE</option>
+                                        <option value="MELBOURNE-AUSTRALIA">MELBOURNE-AUSTRALIA</option>
+                                        <option value="MEXICO">MEXICO</option>
+                                        <option value="MICRONESIA">MICRONESIA</option>
+                                        <option value="MOLDOVA">MOLDOVA</option>
+                                        <option value="MONACO">MONACO</option>
+                                        <option value="MONGOLIA">MONGOLIA</option>
+                                        <option value="MONTENEGRO">MONTENEGRO</option>
+                                        <option value="MONTENEGRO">MONTENEGRO</option>
+                                        <option value="MONTREAL-CANADA">MONTREAL-CANADA</option>
+                                        <option value="MONTSERRAT">MONTSERRAT</option>
+                                        <option value="MOROCCO">MOROCCO</option>
+                                        <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                                        <option value="MYANMAR">MYANMAR</option>
+                                        <option value="NAMIBIA">NAMIBIA</option>
+                                        <option value="NAURU">NAURU</option>
+                                        <option value="NEPAL">NEPAL</option>
+                                        <option value="NETHERLAND">NETHERLAND</option>
+                                        <option value="NETHERLAND">NETHERLAND</option>
+                                        <option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option>
+                                        <option value="NEW CALEDONIA">NEW CALEDONIA</option>
+                                        <option value="NEW ZEALAND">NEW ZEALAND</option>
+                                        <option value="NEWYORK-USA">NEWYORK-USA</option>
+                                        <option value="NICARAGUA">NICARAGUA</option>
+                                        <option value="NICOSIA-CYPRUS">NICOSIA-CYPRUS</option>
+                                        <option value="NIGER">NIGER</option>
+                                        <option value="NIGERIA">NIGERIA</option>
+                                        <option value="NIUE">NIUE</option>
+                                        <option value="NORFOLK ISL">NORFOLK ISL</option>
+                                        <option value="NORTH KOREA">NORTH KOREA</option>
+                                        <option value="NORTHERN MARIANA ISL">NORTHERN MARIANA ISL</option>
+                                        <option value="NORWAY">NORWAY</option>
+                                        <option value="NOTHERN IRELAND">NOTHERN IRELAND</option>
+                                        <option value="OMAN">OMAN</option>
+                                        <option value="ONTARIO-CANADA">ONTARIO-CANADA</option>
+                                        <option value="OTTAWA-CANADA">OTTAWA-CANADA</option>
+                                        <option value="PAKISTAN">PAKISTAN</option>
+                                        <option value="PALAU">PALAU</option>
+                                        <option value="PALESTINE">PALESTINE</option>
+                                        <option value="PALESTINE">PALESTINE</option>
+                                        <option value="PANAMA">PANAMA</option>
+                                        <option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option>
+                                        <option value="PARAGUAY">PARAGUAY</option>
+                                        <option value="PARIS 75 &amp; 92">PARIS 75 &amp; 92</option>
+                                        <option value="PARIS 78, 91 &amp; 95">PARIS 78, 91 &amp; 95</option>
+                                        <option value="PARIS 93 &amp; 94">PARIS 93 &amp; 94</option>
+                                        <option value="PARIS-FRANCE">PARIS-FRANCE</option>
+                                        <option value="PERU">PERU</option>
+                                        <option value="PHILIPPINES">PHILIPPINES</option>
+                                        <option value="PITCAIRN">PITCAIRN</option>
+                                        <option value="POLAND">POLAND</option>
+                                        <option value="POLAND">POLAND</option>
+                                        <option value="PONAPE">PONAPE</option>
+                                        <option value="PORTUGAL">PORTUGAL</option>
+                                        <option value="PORTUGAL">PORTUGAL</option>
+                                        <option value="PUERTO RICO">PUERTO RICO</option>
+                                        <option value="QATAR">QATAR</option>
+                                        <option value="QUEBEC-CANADA">QUEBEC-CANADA</option>
+                                        <option value="REST OF CANADA">REST OF CANADA</option>
+                                        <option value="REST OF FRANCE">REST OF FRANCE</option>
+                                        <option value="REUNION ISL">REUNION ISL</option>
+                                        <option value="RIO DE JANEIRO">RIO DE JANEIRO</option>
+                                        <option value="RITA">RITA</option>
+                                        <option value="ROMANIA">ROMANIA</option>
+                                        <option value="ROMANIA">ROMANIA</option>
+                                        <option value="ROME-ITALY">ROME-ITALY</option>
+                                        <option value="RUSSIA">RUSSIA</option>
+                                        <option value="RWANDA">RWANDA</option>
+                                        <option value="SABA">SABA</option>
+                                        <option value="SAINT MARTIN">SAINT MARTIN</option>
+                                        <option value="SAIPAN">SAIPAN</option>
+                                        <option value="SAMOA">SAMOA</option>
+                                        <option value="SAN MARINO">SAN MARINO</option>
+                                        <option value="SAO TOME &amp; PRINCIPE">SAO TOME &amp; PRINCIPE</option>
+                                        <option value="SAUDI ARABIA">SAUDI ARABIA</option>
+                                        <option value="SCOTLAND">SCOTLAND</option>
+                                        <option value="SENEGAL">SENEGAL</option>
+                                        <option value="SEOUL-S KOREA">SEOUL-S KOREA</option>
+                                        <option value="SERBIA MONTENEGRO">SERBIA MONTENEGRO</option>
+                                        <option value="SEYCHELLES">SEYCHELLES</option>
+                                        <option value="SHANGHAI-CHINA">SHANGHAI-CHINA</option>
+                                        <option value="SHARJAH-UAE">SHARJAH-UAE</option>
+                                        <option value="SIERRA LEONE">SIERRA LEONE</option>
+                                        <option value="SINGAPORE">SINGAPORE</option>
+                                        <option value="SLOVAKIA">SLOVAKIA</option>
+                                        <option value="SLOVAKIA">SLOVAKIA</option>
+                                        <option value="SLOVENIA">SLOVENIA</option>
+                                        <option value="SLOVENIA">SLOVENIA</option>
+                                        <option value="SOLOMAN ISL">SOLOMAN ISL</option>
+                                        <option value="SOMALILAND, REP OF (NORTH SOMALIA)">SOMALILAND, REP OF (NORTH
+                                            SOMALIA)</option>
+                                        <option value="SOUTH AFRICA">SOUTH AFRICA</option>
+                                        <option value="SOUTH GEORGIA ISL">SOUTH GEORGIA ISL</option>
+                                        <option value="SOUTH KOREA">SOUTH KOREA</option>
+                                        <option value="SOUTH SUDAN">SOUTH SUDAN</option>
+                                        <option value="SOUTH SUDAN">SOUTH SUDAN</option>
+                                        <option value="SPAIN">SPAIN</option>
+                                        <option value="SPAIN">SPAIN</option>
+                                        <option value="SRI LANKA">SRI LANKA</option>
+                                        <option value="ST BARTHELEMY">ST BARTHELEMY</option>
+                                        <option value="ST CHRISTOFER">ST CHRISTOFER</option>
+                                        <option value="ST CROIX">ST CROIX</option>
+                                        <option value="ST EUSTATIUS">ST EUSTATIUS</option>
+                                        <option value="ST HELENA">ST HELENA</option>
+                                        <option value="ST JOHN">ST JOHN</option>
+                                        <option value="ST KITTS &amp; NEVIS">ST KITTS &amp; NEVIS</option>
+                                        <option value="ST LUCIA">ST LUCIA</option>
+                                        <option value="ST MATEEN">ST MATEEN</option>
+                                        <option value="ST PIERRE &amp; MIQUELON">ST PIERRE &amp; MIQUELON</option>
+                                        <option value="ST THOMAS">ST THOMAS</option>
+                                        <option value="ST VINCENT &amp; GRENADI">ST VINCENT &amp; GRENADI</option>
+                                        <option value="SUDAN">SUDAN</option>
+                                        <option value="SURINAME">SURINAME</option>
+                                        <option value="SVALBARD &amp; JAN MAYEN ISL">SVALBARD &amp; JAN MAYEN ISL
+                                        </option>
+                                        <option value="SWAZILAND">SWAZILAND</option>
+                                        <option value="SWEDEN">SWEDEN</option>
+                                        <option value="SWEDEN">SWEDEN</option>
+                                        <option value="SWITZERLAND">SWITZERLAND</option>
+                                        <option value="SWITZERLAND">SWITZERLAND</option>
+                                        <option value="SYDNEY-AUSTRALIA">SYDNEY-AUSTRALIA</option>
+                                        <option value="SYRIA">SYRIA</option>
+                                        <option value="TAHITI">TAHITI</option>
+                                        <option value="TAIPEI-TAIWAN">TAIPEI-TAIWAN</option>
+                                        <option value="TAIWAN">TAIWAN</option>
+                                        <option value="TAJIKISTAN">TAJIKISTAN</option>
+                                        <option value="TANZANIA">TANZANIA</option>
+                                        <option value="THAILAND">THAILAND</option>
+                                        <option value="TIMOR LESTE">TIMOR LESTE</option>
+                                        <option value="TINIAN">TINIAN</option>
+                                        <option value="TOGO">TOGO</option>
+                                        <option value="TOKYO-JAPAN">TOKYO-JAPAN</option>
+                                        <option value="TONGA">TONGA</option>
+                                        <option value="TORONTO-CANADA">TORONTO-CANADA</option>
+                                        <option value="TORTOLA">TORTOLA</option>
+                                        <option value="TRINIDAD &amp; TOBAGO">TRINIDAD &amp; TOBAGO</option>
+                                        <option value="TRUK">TRUK</option>
+                                        <option value="TUNISIA">TUNISIA</option>
+                                        <option value="TURKEY">TURKEY</option>
+                                        <option value="TURKMENISTAN">TURKMENISTAN</option>
+                                        <option value="TURKS &amp;  CAICAS ISL">TURKS &amp; CAICAS ISL</option>
+                                        <option value="TUVALU">TUVALU</option>
+                                        <option value="UAE">UAE</option>
+                                        <option value="UGANDA">UGANDA</option>
+                                        <option value="UK">UK</option>
+                                        <option value="UK">UK</option>
+                                        <option value="UKRAINE">UKRAINE</option>
+                                        <option value="UNION ISL">UNION ISL</option>
+                                        <option value="URUGUAY">URUGUAY</option>
+                                        <option value="US MINOR OUTLYING ISL">US MINOR OUTLYING ISL</option>
+                                        <option value="US VIRGIN ISL">US VIRGIN ISL</option>
+                                        <option value="USA">USA</option>
+                                        <option value="USA ZONE 2">USA ZONE 2</option>
+                                        <option value="USA ZONE 3">USA ZONE 3</option>
+                                        <option value="USA ZONE 4">USA ZONE 4</option>
+                                        <option value="USA ZONE 5">USA ZONE 5</option>
+                                        <option value="USA ZONE 6">USA ZONE 6</option>
+                                        <option value="USA ZONE 7">USA ZONE 7</option>
+                                        <option value="USA ZONE 8">USA ZONE 8</option>
+                                        <option value="UZBEKISTAN">UZBEKISTAN</option>
+                                        <option value="VANCOUVER-CANADA">VANCOUVER-CANADA</option>
+                                        <option value="VANUATU">VANUATU</option>
+                                        <option value="VATICAN CITY">VATICAN CITY</option>
+                                        <option value="VENEZUELA">VENEZUELA</option>
+                                        <option value="VIETNAM">VIETNAM</option>
+                                        <option value="VIRGIN ISL">VIRGIN ISL</option>
+                                        <option value="WALES">WALES</option>
+                                        <option value="WALLIS &amp; FUTUNA ISL">WALLIS &amp; FUTUNA ISL</option>
+                                        <option value="WESTERN SAHARA">WESTERN SAHARA</option>
+                                        <option value="YAP">YAP</option>
+                                        <option value="YEMEN">YEMEN</option>
+                                        <option value="YOGOSLAVIA">YOGOSLAVIA</option>
+                                        <option value="ZAIRE">ZAIRE</option>
+                                        <option value="ZAMBIA">ZAMBIA</option>
+                                        <option value="ZIMBABWE">ZIMBABWE</option>
+
+                                    </select>
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Network:</div>
+                            <div class="col-md-10">
+                                <div id="UpdatePanel8">
+                                    <select name="drpNetwok" id="drpNetwok" class="select" style="width: 100%;">
+                                        <option selected="selected" value="Select Value">Select Value</option>
+                                        <option value="DHL">DHL</option>
+                                        <option value="UPS">UPS</option>
+                                        <option value="FedEx">FedEx</option>
+                                        <option value="Aramex">Aramex</option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">
+                                <span id="LabService">Service*:</span>
+                            </div>
+                            <div class="col-md-10">
+                                <div class="select2-container select" id="s2id_Dropservice" style="width: 100%"> <a
+                                        href="#" onclick="return false;" class="select2-choice"> <span></span><abbr
+                                            class="select2-search-choice-close" style="display:none;"></abbr>
+                                        <div><b></b></div>
+                                    </a>
+                                    <div class="select2-drop select2-offscreen">
+                                        <div class="select2-search"> <input type="text" autocomplete="off"
+                                                class="select2-input"> </div>
+                                        <ul class="select2-results"> </ul>
+                                    </div>
+                                </div><select name="Dropservice"
+                                    onchange="javascript:setTimeout('__doPostBack(\'Dropservice\',\'\')', 0)"
+                                    id="Dropservice" class="select" style="width: 100%; display: none;">
+
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="UpdatePanel2">
+
+                        <div class="widget">
+                        </div>
+
+                    </div>
+
+                    <div class="widget">
+                        <div class="head">
+                            <div class="icon"><i class="icosg-pencil"></i></div>
+                            <h2>Ship From</h2>
+                        </div>
+
+
+                        <div class="block-fluid">
+                            <div id="UpdatePanel5">
+
+                                <!--Modal Pop Sender Addressbook-->
+
+
+
+                                <!--/.modal Pop Addressbook-->
+
+                                <div class="form-group">
+                                    <div class="col-md-2">Name:</div>
+                                    <div class="col-md-8" style="padding-bottom: 3px">
+                                        <input name="txtConsignorName" type="text" maxlength="150" id="txtConsignorName"
+                                            class="form-control">
+                                        <span id="RequiredFieldValidator10" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+
+
+                                    <div class="col-md-2">Attention:</div>
+                                    <div class="col-md-10" style="padding-bottom: 3px">
+                                        <input name="txtConsignorAtt" type="text" maxlength="150" id="txtConsignorAtt"
+                                            class="form-control">
+                                        <span id="RequiredFieldValidator16" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+                                    <div class="col-md-2">Address:</div>
+                                    <div class="col-md-10" style="padding-bottom: 3px">
+                                        <input name="txtConsignorAddress" type="text" maxlength="35"
+                                            id="txtConsignorAddress" class="form-control">
+                                        <span id="RequiredFieldValidator13" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-10" style="padding-bottom: 3px">
+                                        <input name="txtConsignorAddress1" type="text" maxlength="35"
+                                            id="txtConsignorAddress1" class="form-control">
+                                        <span id="RequiredFieldValidator8" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+                                    <div class="col-md-2">PinCode:</div>
+                                    <div class="col-md-4" style="padding-bottom: 3px">
+                                        <input name="txtConsignorZipCode" type="text" maxlength="10"
+                                            onchange="javascript:setTimeout('__doPostBack(\'txtConsignorZipCode\',\'\')', 0)"
+                                            onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                            id="txtConsignorZipCode" class="form-control">
+                                        <span id="RequiredFieldValidator2" style="color:Red;visibility:hidden;"></span>
+
+                                    </div>
+                                    <div class="col-md-1">City:</div>
+                                    <div class="col-md-5" style="padding-bottom: 3px;">
+                                        <input name="txtConsignorCity" type="text" maxlength="30" id="txtConsignorCity"
+                                            class="form-control">
+                                        <span id="RequiredFieldValidator12" style="color:Red;visibility:hidden;"></span>
+
+                                    </div>
+                                    <div class="col-md-2">State:</div>
+                                    <div class="col-md-4" style="padding-bottom: 3px">
+                                        <input name="txtConsignorState" type="text" maxlength="35"
+                                            id="txtConsignorState" class="form-control">
+                                    </div>
+                                    <div class="col-md-1">Tel:</div>
+                                    <div class="col-md-5" style="padding-bottom: 3px;">
+                                        <input name="txtConsignorPhone" type="text" maxlength="12"
+                                            id="txtConsignorPhone" class="form-control">
+                                        <span id="RequiredFieldValidator18" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+                                    <div class="col-md-2">ID Type:</div>
+                                    <div class="col-md-10" style="padding-bottom: 3px">
+                                        <div class="select2-container select" id="s2id_drpGSTType" style="width: 100%">
+                                            <a href="#" onclick="return false;" class="select2-choice"> <span>GSTIN
+                                                    (Normal)</span><abbr class="select2-search-choice-close"
+                                                    style="display:none;"></abbr>
+                                                <div><b></b></div>
+                                            </a>
+                                            <div class="select2-drop select2-offscreen">
+                                                <div class="select2-search"> <input type="text" autocomplete="off"
+                                                        class="select2-input"> </div>
+                                                <ul class="select2-results"> </ul>
+                                            </div>
+                                        </div><select name="drpGSTType" id="drpGSTType" class="select"
+                                            style="width: 100%; display: none;">
+                                            <option value="GSTIN (Normal)">GSTIN (Normal)</option>
+                                            <option value="GSTIN (Govt Entities)">GSTIN (Govt Entities)</option>
+                                            <option value="GSTIN (Diplomats)">GSTIN (Diplomats)</option>
+                                            <option value="PAN Number">PAN Number</option>
+                                            <option value="TAN Number">TAN Number</option>
+                                            <option value="Passport Number">Passport Number</option>
+                                            <option value="Aadhaar Number">Aadhaar Number</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="col-md-2">GSTIN:</div>
+                                    <div class="col-md-10" style="padding-bottom: 3px">
+                                        <input name="txtGSTIN" type="text" maxlength="35" id="txtGSTIN"
+                                            class="form-control">
+                                        <span id="RequiredFieldValidator1" style="color:Red;visibility:hidden;"></span>
+                                    </div>
+
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4" style="padding-bottom: 3px;">
+
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-4" style="padding-bottom: 3px;">
+                                        <span id="labConsignorMsg" style="color:Green;"></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="widget">
+                            <div class="head">
+                                <div class="icon"><i class="icosg-pencil"></i></div>
+                                <h2>Ship To</h2>
+                            </div>
+
+
+                            <div class="block-fluid">
+                                <div id="UpdatePanel6">
+
+                                    <!--Modal Pop Sender Addressbook-->
+
+
+
+                                    <!--/.modal Pop Addressbook-->
+                                    <div class="form-group">
+                                        <div class="col-md-2">Name:</div>
+                                        <div class="col-md-8" style="padding-bottom: 3px">
+                                            <input name="txtconname" type="text" maxlength="150" id="txtconname"
+                                                class="form-control">
+                                            <span id="RequiredFieldValidator3"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-md-2">Attention:</div>
+                                        <div class="col-md-10" style="padding-bottom: 3px">
+                                            <input name="txtConsigneeAtt" type="text" maxlength="150"
+                                                id="txtConsigneeAtt" class="form-control">
+                                            <span id="RequiredFieldValidator15"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+                                        <div class="col-md-2">Address:</div>
+                                        <div class="col-md-10" style="padding-bottom: 3px">
+                                            <input name="txtconaddress" type="text" maxlength="35" id="txtconaddress"
+                                                class="form-control">
+                                            <span id="RequiredFieldValidator4"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-10" style="padding-bottom: 3px">
+                                            <input name="txtconaddress1" type="text" maxlength="35" id="txtconaddress1"
+                                                class="form-control">
+                                            <span id="RequiredFieldValidator17"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-10" style="padding-bottom: 3px">
+                                            <input name="txtConsigneeAdd3" type="text" maxlength="35"
+                                                id="txtConsigneeAdd3" class="form-control">
+                                        </div>
+                                        <div class="col-md-2">ZipCode:</div>
+                                        <div class="col-md-5" style="padding-bottom: 3px;">
+                                            <input name="txtzipcode" type="text" maxlength="10"
+                                                onchange="javascript:setTimeout('__doPostBack(\'txtzipcode\',\'\')', 0)"
+                                                onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;"
+                                                id="txtzipcode" class="form-control">
+
+                                        </div>
+                                        <div class="col-md-1">City:</div>
+                                        <div class="col-md-4" style="padding-bottom: 3px">
+                                            <input name="txtcity" type="text" maxlength="30" id="txtcity"
+                                                class="form-control">
+                                            <span id="RequiredFieldValidator5"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+                                        <div class="col-md-2">State:</div>
+                                        <div class="col-md-5" style="padding-bottom: 3px;">
+                                            <input name="Dropstate" type="text" maxlength="2" id="Dropstate"
+                                                class="form-control">
+
+                                        </div>
+                                        <div class="col-md-1">Tel:</div>
+                                        <div class="col-md-4" style="padding-bottom: 3px;">
+                                            <input name="txtPhone" type="text" maxlength="15" id="txtPhone"
+                                                class="form-control">
+                                            <span id="RequiredFieldValidator52"
+                                                style="color:Red;visibility:hidden;"></span>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4" style="padding-bottom: 3px;">
+
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4" style="padding-bottom: 3px;">
+                                            <span id="labConsigneeMsg" style="color:Green;"></span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+                <div class="col-md-6">
+                    <div class="head">
+                        <div class="icon"><i class="icosg-pencil"></i></div>
+
+                        <h2>Package Details</h2>
+                    </div>
+                    <div id="UpdatePanel4">
+
+                        <div class="form-group">
+                            <div class="col-md-2">GoodsType:</div>
+                            <div class="col-md-4">
+                                <div class="select2-container select" id="s2id_DropDownList1" style="width: 100%"> <a
+                                        href="#" onclick="return false;" class="select2-choice">
+                                        <span>Non-Document</span><abbr class="select2-search-choice-close"
+                                            style="display:none;"></abbr>
+                                        <div><b></b></div>
+                                    </a>
+                                    <div class="select2-drop select2-offscreen">
+                                        <div class="select2-search"> <input type="text" autocomplete="off"
+                                                class="select2-input"> </div>
+                                        <ul class="select2-results"> </ul>
+                                    </div>
+                                </div><select name="DropDownList1"
+                                    onchange="javascript:setTimeout('__doPostBack(\'DropDownList1\',\'\')', 0)"
+                                    id="DropDownList1" class="select" style="width: 100%; display: none;">
+                                    <option selected="selected" value="Non-Document">Non-Document</option>
+                                    <option value="Document">Document</option>
+
+                                </select>
+                            </div>
+                            <div class="col-md-1">Pcs*:</div>
+
+                            <div class="col-md-4">
+                                <input name="txtpkgs" type="text" value="1" id="txtpkgs" class="form-control"
+                                    onkeypress="return NumberOnly()">
+                                <span id="RequiredFieldValidator7" style="color:Red;visibility:hidden;"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Actual Wt*:</div>
+                            <div class="col-md-4">
+                                <input name="txtweight1" type="text" value="0.00"
+                                    onchange="javascript:setTimeout('__doPostBack(\'txtweight1\',\'\')', 0)"
+                                    onkeypress="if (WebForm_TextBoxKeyHandler(event) == false) return false;return numericOnly(this);"
+                                    id="txtweight1" class="form-control ">
+                                <span id="RequiredFieldValidator9" style="color:Red;visibility:hidden;"></span>
+                            </div>
+                            <div class="col-md-2" style="text-align: right">volume Wt:</div>
+                            <div class="col-md-4">
+                                <input name="txtvolweight" type="text" value="0.00" readonly="readonly"
+                                    id="txtvolweight" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="widget" id="volweight">
+                            <div class="head">
+                                <div class="icon"><i class="icosg-clipboard1"></i></div>
+                                <h2>Dimension<span style="font-size: 10px">( L (CM)* W (CM) * H (CM) )</span></h2>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="col-md-1">L:</div>
+                                    <div class="col-md-2" style="margin-left: -20px">
+                                        <input name="txtlength" type="text" id="txtlength" class="form-control"
+                                            onkeypress="return numericOnly(this);">
+
+                                    </div>
+                                    <div class="col-md-1">W:</div>
+                                    <div class="col-md-2" style="margin-left: -20px">
+                                        <input name="txtweight" type="text" id="txtweight" class="form-control "
+                                            onkeypress="return numericOnly(this);">
+
+                                    </div>
+                                    <div class="col-md-1">H:</div>
+                                    <div class="col-md-2" style="margin-left: -20px">
+                                        <input name="txtheight" type="text" id="txtheight" class="form-control"
+                                            onkeypress="return numericOnly(this);">
+
+                                    </div>
+                                    <div class="col-md-1">Pcs:</div>
+                                    <div class="col-md-2" style="margin-left: -10px">
+                                        <input name="txtpcs" type="text" id="txtpcs" class="form-control "
+                                            onkeypress="return NumberOnly()">
+
+
+                                    </div>
+                                    <div class="col-md-1">
+                                        <input type="submit" name="txtadd" value="Add" id="txtadd"
+                                            class="btn btn-primary">
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="block-fluid">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="icon"><i class="icosg-pencil"></i></div>
+
+                            <h2>Content Details</h2>
+                        </div>
+                        <div class="form-group">
+
+                            <div class="col-md-2">ChgWt:</div>
+                            <div class="col-md-4">
+                                <input name="txtchgweight" type="text" value="0.00" readonly="readonly"
+                                    id="txtchgweight" class="form-control">
+                            </div>
+                            <div class="col-md-2">Amt:</div>
+                            <div class="col-md-4">
+                                <input name="txtAmount" type="text" value="0.00" readonly="readonly" id="txtAmount"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="widget" id="Itemdesc">
+                            <div class="head">
+                                <div class="icon"><i class="icosg-clipboard1"></i></div>
+                                <h2>Item details</h2>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-md-2">Box*:</div>
+                                <div class="col-md-3" style="margin-left: -20px">
+                                    <input name="txtBoxNo" type="text" id="txtBoxNo" class="form-control"
+                                        onkeypress="return NumberOnly()">
+
+                                </div>
+                                <div class="col-md-2">Description*:</div>
+                                <div class="col-md-5" style="margin-left: -20px">
+                                    <input name="txtContent" type="text" id="txtContent" class="form-control ">
+                                </div>
+
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-2">HSN*:</div>
+                                <div class="col-md-3" style="margin-left: -20px">
+                                    <input name="txtHSN" type="text" maxlength="8" id="txtHSN" class="form-control"
+                                        onkeypress="return numericOnly(this);">
+
+                                </div>
+                                <div class="col-md-1">Qty*:</div>
+                                <div class="col-md-2" style="margin-left: -10px">
+                                    <input name="txtQty" type="text" id="txtQty" class="form-control " onblur="Mult()"
+                                        onkeypress="return numericOnly(this);">
+                                </div>
+                                <div class="col-md-1">Rate*:</div>
+                                <div class="col-md-3" style="margin-left: -10px">
+                                    <input name="txtRate" type="text" id="txtRate" class="form-control " onblur="Mult()"
+                                        onkeypress="return numericOnly(this);">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-2">Amt*:</div>
+                                <div class="col-md-3" style="margin-left: -10px">
+                                    <input name="txtAmt" type="text" readonly="readonly" id="txtAmt"
+                                        class="form-control ">
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="submit" name="butItemAdd" value="Add" id="butItemAdd"
+                                        class="btn btn-primary">
+                                </div>
+
+                            </div>
+
+                            <div class="block-fluid">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-2">InvValue:</div>
+
+                            <div class="col-md-4">
+                                <input name="txtinvvalue" type="text" readonly="readonly" id="txtinvvalue"
+                                    class="form-control " onkeypress="return numericOnly(this);">
+
+                            </div>
+                            <div class="col-md-2" style="margin-left: -10px">
+                                <select name="Dropvalue" id="Dropvalue" style="width: 100%;">
+                                    <option value="--Select--">--Select--</option>
+                                    <option value="USD">USD</option>
+                                    <option value="INR">INR</option>
+                                    <option value="CAD">CAD</option>
+                                    <option value="GBP">GBP</option>
+                                    <option value="EUR">EUR</option>
+                                    <option value="AED">AED</option>
+                                    <option value="SGD">SGD</option>
+                                    <option value="AUD">AUD</option>
+                                    <option value="HKD">HKD</option>
+                                    <option value="JPY">JPY</option>
+                                    <option value="RMB">RMB</option>
+                                    <option value="MYC">MYC</option>
+                                    <option value="UKL">UKL</option>
+                                    <option value="SEK">SEK</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">GSTINVNo:</div>
+                            <div class="col-md-10">
+                                <input name="txtGSTINVNo" type="text" id="txtGSTINVNo" class="form-control">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-2">Description*:</div>
+                            <div class="col-md-10">
+                                <input name="txtcontante" type="text" readonly="readonly" id="txtcontante"
+                                    class="form-control">
+                                <span id="RequiredFieldValidator14" style="color:Red;visibility:hidden;"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Commercial:</div>
+                            <div class="col-md-2">
+                                <div class="checker" id="uniform-chkCommercial"><span><input id="chkCommercial"
+                                            type="checkbox" name="chkCommercial"></span></div>
+                            </div>
+                            <div class="col-md-4">Signature Required(UPS):</div>
+                            <div class="col-md-2">
+                                <div class="checker" id="uniform-chkSign"><span><input id="chkSign" type="checkbox"
+                                            name="chkSign"></span></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Remark:</div>
+                            <div class="col-md-10">
+                                <input name="txtremark" type="text" id="txtremark" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-2">Comm.Inv(.pdf):</div>
+                            <div class="col-md-10">
+                                <input type="file" name="FileUpload1" id="FileUpload1" class="form-control"
+                                    style="font-size:14px;height:24px;">
+                            </div>
+                        </div>
+                        <div class="toolbar bottom TAR">
+                            <input type="submit" name="Butsubmit" value="Submit" id="Butsubmit" class="btn btn-primary">
+                            <input type="submit" name="butClr" value="Reset" id="butClr" class="btn btn-primary">
+                            <div id="UpdateProgress1" style="display:none;" role="status" aria-hidden="true">
+
+                                <div class="div1" style="margin-left: 160px">
+                                    <img src="img/loading.gif">
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <span id="labError" style="color:Red;"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
